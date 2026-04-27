@@ -45,26 +45,32 @@ jobs:
 Your `feed.yaml` should follow this structure:
 
 ```yaml
-title: "My Podcast"
-subtitle: "A short subtitle"
-description: "Full description of the podcast"
-author: "Your Name"
-format: "audio/mpeg"
-language: "en"
-category: "Technology"
-link: "https://yourusername.github.io/your-repo/"
-image: "cover.jpg"
+title: My Podcast
+subtitle: A short subtitle
+author: Your Name
+description: Full description of the podcast.
+image: /images/artwork.jpg
+language: en-us
+category: Technology
+format: audio/mpeg
+link: https://yourusername.github.io/your-repo
 
 item:
-  - title: "Episode 1 - Introduction"
-    description: "Episode description here"
-    duration: "00:30:00"
-    published: "Mon, 01 Jan 2024 00:00:00 GMT"
-    file: "episodes/ep1.mp3"
-    length: "12345678"
+  - title: EP01-Episode Title
+    description: Episode description here.
+    published: Thu, 12 Jan 2023 18:00:00 GMT
+    file: /audio/ep01.mp3
+    duration: 00:30:00
+    length: 576,324
+  - title: EP02-Another Episode
+    description: Another episode description here.
+    published: Thu, 19 Jan 2023 18:00:00 GMT
+    file: /audio/ep02.mp3
+    duration: 00:22:00
+    length: 351,963
 ```
 
-The `link` field is used as the base URL prefix for both the feed image and episode file paths.
+The `link` field is the base URL for your GitHub Pages site. File and image paths should be root-relative (starting with `/`).
 
 ## Output
 
