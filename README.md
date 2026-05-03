@@ -2,7 +2,7 @@
 
 A GitHub Action that automatically generates an RSS/XML podcast feed from a YAML file and hosts it via GitHub Pages.
 
-> Built as part of the [Practical GitHub Actions](https://github.com/marketplace/actions/podcast-generator-workflow-action) course, as part of the [Career Essentials in GitHub Professional Certificate](https://www.linkedin.com/learning/paths/career-essentials-in-github-professional-certificate).
+> Built for my [Practical GitHub Actions](https://github.com/marketplace/actions/podcast-generator-workflow-action) course, as part of the [Career Essentials in GitHub Professional Certificate](https://www.linkedin.com/learning/paths/career-essentials-in-github-professional-certificate).
 
 ## How it works
 
@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: JakeFordy/podcast-generator@v1.0
+      - uses: JakeFordy/podcast-generator@v1.1
         with:
           email: ${{ github.actor }}@localhost
           name: ${{ github.actor }}
